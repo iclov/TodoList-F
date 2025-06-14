@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to right, #2d3236, #466f91);
+}
+
+#task-form {
+  position: fixed;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  display: flex;
+}
+
+#task-form input[type="text"] {
+  width: 100%;
+  padding: 1rem; /*中身の幅*/
+  padding-right: 3rem; /* ボタンが重ならないようスペース確保 */
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3b3d41;
+  color: white;
+}
+
+#task-form button[type="submit"] {
+  position: absolute;
+  margin-top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  background-color: #3b3d41;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#task-form button[type="submit"]:hover {
+  background-color: rgb(146, 140, 140);
+}
