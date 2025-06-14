@@ -9,14 +9,22 @@
 </head>
 
 <body>
-  <div class="main">
+  <div class="form">
     <form id="task-form">
-        <input type="text" placeholder="タスクの追加" required>
-        <button type="submit">+</button>
+      <input type="text" placeholder="やりたいことは？" required>
+      <button type="submit">+</button>
     </form>
-    <div class="history-box">
+    <form id="condition-form">
+      <input type="text" placeholder="今の気分は？" required>
+      <button type="submit">+</button>
+    </form>
+  <div class="List">
+    <div class="List-txt">
+      <p id="Todo">今日の予定</p>
+      <p id="today"></p>
     </div>
-</div>
+  </div>
+  
   </div>
 </body>
 </html>

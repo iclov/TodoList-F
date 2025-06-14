@@ -2,6 +2,7 @@ body {
   background: linear-gradient(to right, #2d3236, #466f91);
 }
 
+/*-----task-form-----*/
 #task-form {
   position: fixed;
   bottom: 3rem;
@@ -9,6 +10,7 @@ body {
   transform: translateX(-50%);
   width: 40rem;
   display: flex;
+  z-index: 1000;
 }
 
 #task-form input[type="text"] {
@@ -37,4 +39,73 @@ body {
 
 #task-form button[type="submit"]:hover {
   background-color: rgb(146, 140, 140);
+}
+
+/*-----condition-form-----*/
+
+#condition-form {
+  position: fixed;
+  bottom: 7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rem;
+  display: flex;
+  z-index: 1000;
+}
+
+#condition-form input[type="text"] {
+  width: 100%;
+  padding: 1rem; /*中身の幅*/
+  padding-right: 3rem; /* ボタンが重ならないようスペース確保 */
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3b3d41;
+  color: white;
+}
+
+#condition-form button[type="submit"] {
+  position: absolute;
+  margin-top: 0.5rem;
+  right: 0.5rem;
+  font-size: 2rem;
+  background-color: #3b3d41;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#condition-form button[type="submit"]:hover {
+  background-color: rgb(146, 140, 140);
+}
+
+/*-----List-----*/
+
+.List {
+  position: fixed;
+  background-color: #466f91;
+  border-radius: 1rem;
+  width: 35vw;
+  height: 47vw;
+  margin-top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+}
+
+.List-txt {
+  font-family: Meiryo;
+  margin-left: 1rem;
+}
+
+#Todo {
+  font-size: 1.5vw;
+}
+
+#today {
+  font-size: 0.8vw;
+  margin-top: -2rem;
+  margin-left: 1.3rem;
 }
